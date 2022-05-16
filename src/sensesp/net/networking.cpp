@@ -22,7 +22,7 @@ namespace sensesp {
 //    (But keep using the saved WiFi credentials!)
 
 Networking::Networking(String config_path, String ssid, String password,
-                       String hostname, const char* wifi_manager_password, const bool* is_wifi_required)
+                       String hostname, const char* wifi_manager_password, bool is_wifi_required)
     : Configurable{config_path, "Basic WiFi Setup", 100},
       wifi_manager_password_{wifi_manager_password},
       Startable(80),

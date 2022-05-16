@@ -82,7 +82,7 @@ class Networking : public Configurable,
   String default_hostname = "";
 
   const char* wifi_manager_password_;
-  const bool is_wifi_required_;
+  bool is_wifi_required_;
 };
 
 }  // namespace sensesp
