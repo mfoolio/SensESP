@@ -22,7 +22,7 @@ namespace sensesp {
 //    (But keep using the saved WiFi credentials!)
 
 Networking::Networking(String config_path, String ssid, String password,
-                       String hostname, const char* wifi_manager_password)
+                       String hostname, const char* wifi_manager_password, const bool* is_wifi_required)
     : Configurable{config_path, "Basic WiFi Setup", 100},
       wifi_manager_password_{wifi_manager_password},
       Startable(80),
@@ -261,9 +261,15 @@ void Networking::setup_wifi_manager() {
     SensESPBaseApp::get()->get_hostname_observable()->set(new_hostname);
     debugI("Got new SSID and password: %s", ap_ssid.c_str());
     save_configuration();
+    debugW("Restarting (WifiManager New Credentials)...");
+    ESP.restart();
   }
-  debugW("Restarting (WifiManager Timed Out)...");
-  ESP.restart();
+
+  if (is_wifi_required) 
+  {
+    debugW("Restarting (WifiManager Timed Out)...");
+    ESP.restart();
+  }
 }
 
 String Networking::get_config_schema() {
