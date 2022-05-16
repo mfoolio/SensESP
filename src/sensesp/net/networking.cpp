@@ -58,6 +58,13 @@ Networking::Networking(String config_path, String ssid, String password,
 
 void Networking::start() {
   debugD("Enabling Networking object");
+  if (is_wifi_required_)
+  {
+    debugD("WIFI IS REQUIRED");
+  } else
+  {
+    debugD("WIFI IS NOT REQUIRED");
+  }
 
   // If we have preset or saved WiFi config, always use it. Otherwise,
   // start WiFiManager. WiFiManager always starts the configuration portal

@@ -60,8 +60,8 @@ void SensESPApp::setup() {
           ))
       ->connect_to(new LambdaConsumer<SystemStatus>([](SystemStatus input) {
         debugD("Got system status: %d", (int)input);
-        if (input == SystemStatus::kWifiDisconnected ||
-            input == SystemStatus::kWifiNoAP) {
+        if ((input == SystemStatus::kWifiDisconnected ||
+            input == SystemStatus::kWifiNoAP) && is_wifi_required_) {
           debugW("Unable to connect to wifi for too long; restarting.");
           ReactESP::app->onDelay(1000, []() { ESP.restart(); });
         }
