@@ -265,7 +265,7 @@ void Networking::setup_wifi_manager() {
     ESP.restart();
   }
 
-  if (is_wifi_required) 
+  if (is_wifi_required_) 
   {
     debugW("Restarting (WifiManager Timed Out)...");
     ESP.restart();
