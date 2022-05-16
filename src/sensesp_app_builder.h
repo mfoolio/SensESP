@@ -188,12 +188,12 @@ class SensESPAppBuilder : public SensESPBaseAppBuilder {
   /**
    * @brief Set the wifi required flag.
    *
-   * Set a flag to force reset if unable to connec to access point
+   * Set a flag to force reset if unable to connect to access point
    *
    * @param password
    * @return SensESPAppBuilder*
    */
- SensESPAppBuilder* set_wifi_required(const bool state) {
+ SensESPAppBuilder* set_wifi_required(bool state) {
     app_->set_wifi_required(state);
     return this;
   }

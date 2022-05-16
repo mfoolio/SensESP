@@ -103,7 +103,7 @@ class SensESPApp : public SensESPBaseApp {
     wifi_manager_password_ = password;
     return this;
   }
-  const SensESPApp* set_wifi_required(const bool state) {
+  const SensESPApp* set_wifi_required(bool state) {
     is_wifi_required_ = state;
     return this;
   }
