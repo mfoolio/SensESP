@@ -103,7 +103,7 @@ class SensESPApp : public SensESPBaseApp {
     wifi_manager_password_ = password;
     return this;
   }
-  const SensESPApp* set_wifi_required(const bool* state) {
+  const SensESPApp* set_wifi_required(const bool state) {
     is_wifi_required_ = state;
     return this;
   }
@@ -116,7 +116,7 @@ class SensESPApp : public SensESPBaseApp {
   uint16_t sk_server_port_ = 0;
   const char* ota_password_ = nullptr;
   const char* wifi_manager_password_ = "thisisfine";
-  const bool* is_wifi_required_ = true;
+  const bool is_wifi_required_ = true;
 
   Filesystem* filesystem_;
   DebugOutput* debug_output_;

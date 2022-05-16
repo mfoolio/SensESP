@@ -25,7 +25,7 @@ class Networking : public Configurable,
                    public ValueProducer<WiFiState> {
  public:
   Networking(String config_path, String ssid, String password, String hostname,
-             const char* wifi_manager_password, const bool* is_wifi_required);
+             const char* wifi_manager_password, const bool is_wifi_required);
   virtual void start() override;
   virtual void reset() override;
 
@@ -82,7 +82,7 @@ class Networking : public Configurable,
   String default_hostname = "";
 
   const char* wifi_manager_password_;
-  const bool* is_wifi_required_;
+  const bool is_wifi_required_;
 };
 
 }  // namespace sensesp

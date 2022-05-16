@@ -193,7 +193,7 @@ class SensESPAppBuilder : public SensESPBaseAppBuilder {
    * @param password
    * @return SensESPAppBuilder*
    */
- SensESPAppBuilder* set_wifi_required(const bool* state) {
+ SensESPAppBuilder* set_wifi_required(const bool state) {
     app_->set_wifi_required(state);
     return this;
   }
