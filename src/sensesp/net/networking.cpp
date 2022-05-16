@@ -262,7 +262,7 @@ void Networking::setup_wifi_manager() {
     debugI("Got new SSID and password: %s", ap_ssid.c_str());
     save_configuration();
   }
-  debugW("Restarting...");
+  debugW("Restarting (WifiManager Timed Out)...");
   ESP.restart();
 }
 
