@@ -216,7 +216,7 @@ void Networking::setup_wifi_manager() {
   if (wifi_manager_ap_ssid_ != "") {
     config_ssid = wifi_manager_ap_ssid_;
   } else {
-    config_ssid = "Configure " + hostname;
+    config_ssid = "Configure " + hostname + " " + String(ESP_getChipId(), HEX);
   }
   const char* pconfig_ssid = config_ssid.c_str();
 
