@@ -7,6 +7,8 @@ var annotated_dup =
       [ "AngleCorrection", "classsensesp_1_1_angle_correction.html", "classsensesp_1_1_angle_correction" ],
       [ "BaseAnalogReader", "classsensesp_1_1_base_analog_reader.html", "classsensesp_1_1_base_analog_reader" ],
       [ "BaseBlinker", "classsensesp_1_1_base_blinker.html", "classsensesp_1_1_base_blinker" ],
+      [ "BaseButtonHandler", "classsensesp_1_1_base_button_handler.html", "classsensesp_1_1_base_button_handler" ],
+      [ "ButtonHandler", "classsensesp_1_1_button_handler.html", "classsensesp_1_1_button_handler" ],
       [ "ChangeFilter", "classsensesp_1_1_change_filter.html", "classsensesp_1_1_change_filter" ],
       [ "ClickType", "classsensesp_1_1_click_type.html", "classsensesp_1_1_click_type" ],
       [ "Configurable", "classsensesp_1_1_configurable.html", "classsensesp_1_1_configurable" ],
@@ -42,6 +44,7 @@ var annotated_dup =
       [ "LocalDebug", "classsensesp_1_1_local_debug.html", "classsensesp_1_1_local_debug" ],
       [ "MDNSDiscovery", "classsensesp_1_1_m_d_n_s_discovery.html", "classsensesp_1_1_m_d_n_s_discovery" ],
       [ "Median", "classsensesp_1_1_median.html", "classsensesp_1_1_median" ],
+      [ "MinimalButtonHandler", "classsensesp_1_1_minimal_button_handler.html", "classsensesp_1_1_minimal_button_handler" ],
       [ "MovingAverage", "classsensesp_1_1_moving_average.html", "classsensesp_1_1_moving_average" ],
       [ "Networking", "classsensesp_1_1_networking.html", "classsensesp_1_1_networking" ],
       [ "Observable", "classsensesp_1_1_observable.html", "classsensesp_1_1_observable" ],
@@ -74,6 +77,7 @@ var annotated_dup =
       [ "SKMetadata", "classsensesp_1_1_s_k_metadata.html", "classsensesp_1_1_s_k_metadata" ],
       [ "SKOutput", "classsensesp_1_1_s_k_output.html", "classsensesp_1_1_s_k_output" ],
       [ "SKOutputNumeric", "classsensesp_1_1_s_k_output_numeric.html", "classsensesp_1_1_s_k_output_numeric" ],
+      [ "SKOutputRawJson", "classsensesp_1_1_s_k_output_raw_json.html", "classsensesp_1_1_s_k_output_raw_json" ],
       [ "SKOutputTime", "classsensesp_1_1_s_k_output_time.html", "classsensesp_1_1_s_k_output_time" ],
       [ "SKPutListener", "classsensesp_1_1_s_k_put_listener.html", "classsensesp_1_1_s_k_put_listener" ],
       [ "SKPutRequest", "classsensesp_1_1_s_k_put_request.html", "classsensesp_1_1_s_k_put_request" ],
@@ -96,6 +100,7 @@ var annotated_dup =
       [ "TransformBase", "classsensesp_1_1_transform_base.html", "classsensesp_1_1_transform_base" ],
       [ "TruthToText", "classsensesp_1_1_truth_to_text.html", "classsensesp_1_1_truth_to_text" ],
       [ "Typecast", "classsensesp_1_1_typecast.html", "classsensesp_1_1_typecast" ],
+      [ "UIButton", "classsensesp_1_1_u_i_button.html", "classsensesp_1_1_u_i_button" ],
       [ "UILambdaOutput", "classsensesp_1_1_u_i_lambda_output.html", "classsensesp_1_1_u_i_lambda_output" ],
       [ "UIOutput", "classsensesp_1_1_u_i_output.html", "classsensesp_1_1_u_i_output" ],
       [ "UIOutputBase", "classsensesp_1_1_u_i_output_base.html", "classsensesp_1_1_u_i_output_base" ],
@@ -106,6 +111,7 @@ var annotated_dup =
       [ "VoltageDividerR2", "classsensesp_1_1_voltage_divider_r2.html", "classsensesp_1_1_voltage_divider_r2" ],
       [ "VoltageMultiplier", "classsensesp_1_1_voltage_multiplier.html", "classsensesp_1_1_voltage_multiplier" ],
       [ "WiFiSignal", "classsensesp_1_1_wi_fi_signal.html", "classsensesp_1_1_wi_fi_signal" ],
+      [ "WiFiStateProducer", "classsensesp_1_1_wi_fi_state_producer.html", "classsensesp_1_1_wi_fi_state_producer" ],
       [ "WSClient", "classsensesp_1_1_w_s_client.html", "classsensesp_1_1_w_s_client" ]
     ] ]
 ];

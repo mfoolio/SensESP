@@ -61,13 +61,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "air__density_8cpp.html",
-"classsensesp_1_1_digital_input_change.html#afdbdc05bb8cd2bbe78f365e7a48ba2f5",
-"classsensesp_1_1_networking.html#a28dcf335a69d16f9206e0e5b9886d66a",
-"classsensesp_1_1_s_k_metadata.html#a7ff429692c4d289572a73f418c423b16",
-"classsensesp_1_1_sens_e_s_p_base_app.html",
-"classsensesp_1_1_value_producer.html#a08032702dc65bfc839eeeb5b006195d4",
-"hysteresis_8h.html",
-"sensesp__app_8h.html#add0ff5bdcc203b4a438aa1f46260283d"
+"classsensesp_1_1_debug_output.html#ac61ed9521c65b2da872d53d08e9aaefb",
+"classsensesp_1_1_m_d_n_s_discovery.html#a92a5eea6085988a188e9d4b7ec887ea2",
+"classsensesp_1_1_s_k_delta_queue.html#a130c4f0ea878551c17809cc8a1b79412",
+"classsensesp_1_1_sens_e_s_p_app.html#aac33818674ffe424e8d1183aa4ff5232",
+"classsensesp_1_1_time_string.html#aeb516b69e78564ae94b6b0dc397c1521",
+"dew__point_8h_source.html",
+"namespacesensesp.html#a8b87d522bfe38fb6f0f3412645759ad0",
+"system__status__controller_8h.html#af833775127368fc26658b6d3a070f2aba91fb26167a66932c36d148bb5fdf98da"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

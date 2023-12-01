@@ -79,10 +79,13 @@ class WSClient : public Configurable,
   void sendTXT(String& payload);
 
  private:
+  // these are the actually used values
   String server_address_ = "";
   uint16_t server_port_ = 80;
-  String preset_server_address_ = "";
-  uint16_t preset_server_port_ = 0;
+  // these are the hardcoded and/or conf file values
+  String conf_server_address_ = "";
+  uint16_t conf_server_port_ = 0;
+
   String client_id_ = "";
   String polling_href_ = "";
   String auth_token_ = NULL_AUTH_TOKEN;
@@ -90,7 +93,7 @@ class WSClient : public Configurable,
   bool token_test_success_ = false;
 
   TaskQueueProducer<WSConnectionState> connection_state_ =
-      TaskQueueProducer<WSConnectionState>(WSConnectionState::kWSDisconnected);
+      TaskQueueProducer<WSConnectionState>(WSConnectionState::kWSDisconnected, ReactESP::app);
 
   /// task_connection_state is used to track the internal task state which might
   /// be out of sync with the published connection state.
@@ -100,7 +103,7 @@ class WSClient : public Configurable,
   WebSocketsClient client_;
   SKDeltaQueue* sk_delta_queue_;
   TaskQueueProducer<int> delta_count_producer_ =
-      TaskQueueProducer<int>(0, 5, 990);
+      TaskQueueProducer<int>(0, ReactESP::app, 5, 990);
 
   SemaphoreHandle_t received_updates_semaphore_ =
       xSemaphoreCreateRecursiveMutex();

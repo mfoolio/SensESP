@@ -24,8 +24,9 @@ If you want to have your own project added to the list, [create an issue](https:
 - [NXP Sensor Fusion](https://github.com/BjarneBitscrambler/OrientationSensorFusion-ESP): Orientation sensing and sensor fusion using NXP FXOS8700 magnetometer/accelerometer and FXAS21002 gyroscope sensors
 - [SignalK-Orientation](https://github.com/BjarneBitscrambler/SignalK-Orientation): Library providing vessel and vehicle orientation information in Signal K message format
 
-### Current and Power
+### Victron Energy devices
 
+- [SensESP/VEDirect](https://github.com/SensESP/VEDirect): Connect any Victron Energy device with a VE.Direct interface to SensESP. Should support all VE.Direct fields, meaning that information from all devices types can be read. At the moment, only input of VE.Direct Text mode is supported.
 - [ve.direct_mppt](https://github.com/SensESP/ve.direct_mppt): Library for reading one victron mppt unit via the ve.direct hardware interface into SignalK/SensESP
 
 ### Control and Display Libraries
@@ -37,6 +38,7 @@ If you want to have your own project added to the list, [create an issue](https:
 ### NMEA 0183
 
 - [NMEA 0183 input parser](https://github.com/SensESP/NMEA0183/): NMEA 0183 parser for SensESP. This library supports common GNSS (GPS, GLONASS, Galileo) receiver devices out of the box and can be easily extended to support other NMEA 0183 sentences as well.
+- Example project for implementing a Signal K GPS receiver using [SH-ESP32](https://shop.hatlabs.fi/products/sh-esp32) and a Beitian BN-880 GPS receiver module: [SensESP-BN-880](https://github.com/hatlabs/SensESP-BN-880).
 
 ### Temperature and Humidity
 
@@ -47,3 +49,5 @@ If you want to have your own project added to the list, [create an issue](https:
 ## Examples and Related Projects
 
 - [SH-ESP32-test-jig](https://github.com/hatlabs/SH-ESP32-test-jig): A test jig implementation for the [SH-ESP32](https://hatlabs.github.io/sh-esp32/). While not generally useful in itself, these two projects showcase NMEA 2000 communication and how to use SensESP constructs without having to instantiate a SensESPApp object.
+- [Sailor Hat Wireless Gateway (SH-wg)](https://github.com/hatlabs/SH-wg-firmware): NMEA 2000 WiFi gateway firmware implemented using SensESP.
+- [SensESP-M5Stack](https://github.com/mhaberler/SensESP-M5Stack): examples for [M5Stack Core2](https://shop.m5stack.com/products/m5stack-core2-esp32-iot-development-kit) and [M5Stick-C](https://shop.m5stack.com/products/stick-c?variant=17203451265114) running SenseESP. They do nothing useful except subscribing to a few SignalK values and feeding IMU and some system values to the SignalK server. Might serve as a starting point.

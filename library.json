@@ -58,9 +58,14 @@
     {
       "name": "RemoteDebug",
       "version": "https://github.com/JoaoLopesF/RemoteDebug.git#0b5a9c1a49fd2ade0e3cadc3a3707781e819359a"
+    },
+    {
+      "owner": "bxparks",
+      "name": "AceButton",
+      "version": "^1.10.1"
     }
   ],
-  "version": "2.4.2-alpha",
+  "version": "2.7.1-alpha",
   "frameworks": "arduino",
   "platforms": ["espressif32"]
 }
